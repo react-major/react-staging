@@ -24,9 +24,21 @@ export default async function Home() {
   return (
     <main className="self-stretch w-full">
       <div className="grid grid-cols-3 gap-4">
-        <FeatureList features={features} />
-        <FeatureList features={features} />
-        <FeatureList features={features} />
+        <FeatureList
+          versionName="18.2.0"
+          releaseChannel="Stable"
+          features={features}
+        />
+        <FeatureList
+          versionName="18.2.1"
+          releaseChannel="Pre-release"
+          features={features}
+        />
+        <FeatureList
+          versionName="19.x"
+          releaseChannel="Next"
+          features={features}
+        />
       </div>
     </main>
   );
