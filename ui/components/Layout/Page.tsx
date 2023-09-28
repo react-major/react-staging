@@ -124,10 +124,10 @@ export function Page({ children, toc, routeTree, meta, section }: PageProps) {
         breadcrumbs={breadcrumbs}
       />
       <div
-        className={cn(
+        className={`h-full grow ${cn(
           hasColumns &&
             "grid grid-cols-only-content lg:grid-cols-sidebar-content 2xl:grid-cols-sidebar-content-toc",
-        )}
+        )}`}
       >
         {showSidebar && (
           <div className="lg:-mt-16">
@@ -142,7 +142,7 @@ export function Page({ children, toc, routeTree, meta, section }: PageProps) {
         )}
         {/* No fallback UI so need to be careful not to suspend directly inside. */}
         <Suspense fallback={null}>
-          <main className="min-w-0 isolate">
+          <main className="min-w-0 isolate h-full flex flex-col justify-between">
             <article
               className="break-words font-normal text-primary dark:text-primary-dark"
               key={asPath}
