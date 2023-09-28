@@ -61,7 +61,7 @@ export default function SidebarNav({
             <div className="h-20" />
           </nav>
           <div className="fixed bottom-0 hidden lg:block">
-            <Feedback />
+            {/* <Feedback /> */}
           </div>
         </aside>
       </div>

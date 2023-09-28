@@ -4,7 +4,7 @@
 
 import { Suspense } from "react";
 import * as React from "react";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import { SidebarNav } from "./SidebarNav";
 import { Footer } from "./Footer";
 import { Toc } from "./Toc";
@@ -33,7 +33,8 @@ interface PageProps {
 }
 
 export function Page({ children, toc, routeTree, meta, section }: PageProps) {
-  const { asPath } = useRouter();
+  // const { asPath } = useRouter();
+  const asPath = "/";
   const cleanedPath = asPath.split(/[\?\#]/)[0];
   const { route, nextRoute, prevRoute, breadcrumbs, order } = getRouteMeta(
     cleanedPath,
@@ -42,8 +43,8 @@ export function Page({ children, toc, routeTree, meta, section }: PageProps) {
   const title = meta.title || route?.title || "";
   const canary = meta.canary || false;
   const description = meta.description || route?.description || "";
-  const isHomePage = cleanedPath === "/";
-  const isBlogIndex = cleanedPath === "/blog";
+  const isHomePage = false;
+  const isBlogIndex = true;
 
   let content;
   if (isHomePage) {
@@ -98,6 +99,9 @@ export function Page({ children, toc, routeTree, meta, section }: PageProps) {
     showSidebar = false;
   }
 
+  hasColumns = false;
+  showSidebar = false;
+
   let searchOrder;
   if (section === "learn" || (section === "blog" && !isBlogIndex)) {
     searchOrder = order;
@@ -105,12 +109,12 @@ export function Page({ children, toc, routeTree, meta, section }: PageProps) {
 
   return (
     <>
-      <Seo
+      {/* <Seo
         title={title}
         isHomePage={isHomePage}
         image={`/images/og-` + section + ".png"}
         searchOrder={searchOrder}
-      />
+      /> */}
       <SocialBanner />
       <TopNav
         section={section}

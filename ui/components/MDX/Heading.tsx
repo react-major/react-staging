@@ -4,7 +4,8 @@
 
 import cn from "classnames";
 import * as React from "react";
-import { forwardRefWithAs } from "utils/forwardRefWithAs";
+import { forwardRefWithAs } from "ui/utils/forwardRefWithAs";
+
 export interface HeadingProps {
   className?: string;
   isPageAnchor?: boolean;

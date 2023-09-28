@@ -25,7 +25,6 @@ import { Logo } from "ui/components/Logo";
 import Link from "ui/components/MDX/Link";
 import CodeBlock from "ui/components/MDX/CodeBlock";
 import { ExternalLink } from "ui/components/ExternalLink";
-import sidebarBlog from "../../sidebarBlog.json";
 
 function Section({ children, background = null }) {
   return (
@@ -100,16 +99,16 @@ function CurrentTime() {
   return <span suppressHydrationWarning>{currentTime}</span>;
 }
 
-const blogSidebar = sidebarBlog.routes[1];
-if (blogSidebar.path !== "/blog") {
-  throw Error("Could not find the blog route in sidebarBlog.json");
-}
-const recentPosts = blogSidebar.routes.slice(0, 4).map((entry) => ({
-  title: entry.titleForHomepage,
-  icon: entry.icon,
-  date: entry.date,
-  url: entry.path,
-}));
+// const blogSidebar = sidebarBlog.routes[1];
+// if (blogSidebar.path !== "/blog") {
+//   throw Error("Could not find the blog route in sidebarBlog.json");
+// }
+// const recentPosts = blogSidebar.routes.slice(0, 4).map((entry) => ({
+//   title: entry.titleForHomepage,
+//   icon: entry.icon,
+//   date: entry.date,
+//   url: entry.path,
+// }));
 
 export function HomeContent() {
   return (
@@ -441,25 +440,6 @@ export function HomeContent() {
                   <IconChevron />
                   Latest React News
                 </p>
-                <div className="flex-col sm:flex-row flex-wrap flex gap-5 text-start my-5">
-                  <div className="flex-1 min-w-[40%] text-start">
-                    <BlogCard {...recentPosts[0]} />
-                  </div>
-                  <div className="flex-1 min-w-[40%] text-start">
-                    <BlogCard {...recentPosts[1]} />
-                  </div>
-                  <div className="flex-1 min-w-[40%] text-start">
-                    <BlogCard {...recentPosts[2]} />
-                  </div>
-                  <div className="hidden sm:flex-1 sm:inline">
-                    <BlogCard {...recentPosts[3]} />
-                  </div>
-                </div>
-                <div className="flex lg:hidden justify-start w-full">
-                  <CTA color="gray" icon="news" href="/blog">
-                    Read more React news
-                  </CTA>
-                </div>
               </div>
             </div>
           </div>

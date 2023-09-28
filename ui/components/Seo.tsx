@@ -5,7 +5,7 @@
 import * as React from "react";
 import Head from "next/head";
 import { withRouter, Router } from "next/router";
-import { siteConfig } from "../siteConfig";
+import { siteConfig } from "../../siteConfig";
 
 export interface SeoProps {
   title: string;

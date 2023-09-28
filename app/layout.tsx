@@ -1,9 +1,13 @@
 "use client";
 
-import { TopNav } from "@/ui/components/Layout/TopNav";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Page } from "ui/components/Layout/Page";
+
+function MaxWidth({ children }: { children: any }) {
+  return <div className="max-w-4xl ms-0 2xl:mx-auto">{children}</div>;
+}
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,13 +25,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <TopNav
-          section="unknown"
+        <Page
+          toc={[]}
           // @ts-ignore
-          routeTree={metadata}
-          breadcrumbs={[]}
-        />
-        {children}
+          routeTree={{}}
+          // @ts-ignore
+          meta={metadata}
+        >
+          <MaxWidth>{children}</MaxWidth>
+        </Page>
       </body>
     </html>
   );
