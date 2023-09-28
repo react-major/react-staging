@@ -1,6 +1,6 @@
 import prisma from "lib/prisma";
 
-import { Prisma } from "@prisma/client";
+import { type Prisma } from "@prisma/client";
 
 async function getFeature({ id }: { id: string }) {
   const feature = await prisma.feature.findUniqueOrThrow({

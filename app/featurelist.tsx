@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FeaturesWithAuthors } from "./page";
-import FeatureListCard from "@/ui/components/MDX/FeatureListCard";
+import FeatureListCard from "ui/components/MDX/FeatureListCard";
 
 export default function FeatureList({
   features,
