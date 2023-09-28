@@ -2,13 +2,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-### Environment Setup
-
-Install the vercel CLI with `npm i -g vercel@latest`, then pull environment variables with:
-
-```
-vercel env pull .env
-```
+ - Clone this repo: `git clone https://github.com/react-major/react-staging`
+ - `cd react-staging`
+ - `npm i`
+ - Install `vercel` CLI if you haven't already: `npm i -g vercel@latest`
+ - `vercel link`
+ - `vercel env pull` to create `.env.local`
+ - `npm run dev`
 
 ### Run the Server
 
@@ -16,12 +16,6 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
