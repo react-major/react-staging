@@ -8,10 +8,14 @@ import "ui/styles/sandpack.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const metadata: Metadata = {
+export const metadata: Metadata = {
   title: "React Releases",
   description:
     "React feature progression through releases, canary, experimental nightly",
+  icons: {
+    shortcut: "/favicon.ico",
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
