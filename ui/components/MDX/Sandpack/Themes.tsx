@@ -33,12 +33,15 @@ export const CustomTheme = {
     string: "inherit",
   },
   font: {
+    // @ts-ignore
     body: tailwindConfig.theme.extend.fontFamily.text
       .join(", ")
       .replace(/"/gm, ""),
+    // @ts-ignore
     mono: tailwindConfig.theme.extend.fontFamily.mono
       .join(", ")
       .replace(/"/gm, ""),
+    // @ts-ignore
     size: tailwindConfig.theme.extend.fontSize.code,
     lineHeight: "24px",
   },
