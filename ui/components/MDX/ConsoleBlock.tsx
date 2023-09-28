@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import { isValidElement } from "react";
 import * as React from "react";
 import cn from "classnames";

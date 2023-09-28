@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import { useState } from "react";
 import cn from "classnames";
 import { Button } from "ui/components/Button";

@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import cn from "classnames";
 import * as React from "react";
 import { forwardRefWithAs } from "ui/utils/forwardRefWithAs";

@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import { useSyncExternalStore } from "react";
 import { useSandpack } from "@codesandbox/sandpack-react/unstyled";
 import { IconDownload } from "../../Icon/IconDownload";

@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 export function Logo(props: JSX.IntrinsicElements["svg"]) {
   return (
     <svg

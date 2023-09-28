@@ -1,6 +1,8 @@
 /*
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
+
+"use client";
 import { memo, useRef, useState } from "react";
 import { flushSync } from "react-dom";
 import {

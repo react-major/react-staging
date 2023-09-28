@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import { createContext } from "react";
 import type { ReactNode } from "react";
 

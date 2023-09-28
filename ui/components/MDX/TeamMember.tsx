@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import * as React from "react";
 import Image from "next/image";
 import { IconTwitter } from "../Icon/IconTwitter";

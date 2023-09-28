@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import * as React from "react";
 import Head from "next/head";
 import { withRouter, Router } from "next/router";

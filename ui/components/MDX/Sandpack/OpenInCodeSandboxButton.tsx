@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import { UnstyledOpenInCodeSandboxButton } from "@codesandbox/sandpack-react/unstyled";
 import { IconNewPage } from "../../Icon/IconNewPage";
 

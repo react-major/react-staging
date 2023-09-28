@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 // @ts-nocheck
 
 import { useState, useEffect } from "react";

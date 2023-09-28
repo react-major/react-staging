@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import { useRouter } from "next/router";
 import { useState, useRef, useEffect } from "react";
 

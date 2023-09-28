@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import { Fragment } from "react";
 import Link from "next/link";
 import type { RouteItem } from "ui/components/Layout/getRouteMeta";

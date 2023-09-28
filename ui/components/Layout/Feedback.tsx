@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { ga } from "../../utils/analytics";

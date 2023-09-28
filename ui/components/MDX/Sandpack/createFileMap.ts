@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import type { SandpackFile } from "@codesandbox/sandpack-react/unstyled";
 
 export const createFileMap = (codeSnippets: any) => {

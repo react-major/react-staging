@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import { useRef, useCallback, useEffect, createRef } from "react";
 import cn from "classnames";
 import { IconChevron } from "ui/components/Icon/IconChevron";

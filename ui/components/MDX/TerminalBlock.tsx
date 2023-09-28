@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import { isValidElement, useState, useEffect } from "react";
 import * as React from "react";
 import { IconTerminal } from "../Icon/IconTerminal";

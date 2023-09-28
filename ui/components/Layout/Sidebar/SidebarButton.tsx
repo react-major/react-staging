@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import * as React from "react";
 import cn from "classnames";
 import { IconNavArrow } from "ui/components/Icon/IconNavArrow";

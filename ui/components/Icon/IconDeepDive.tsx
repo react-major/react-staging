@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import { memo } from "react";
 
 export const IconDeepDive = memo<JSX.IntrinsicElements["svg"]>(

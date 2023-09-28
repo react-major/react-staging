@@ -1,6 +1,8 @@
 /*
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
+
+"use client";
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useRef, useState, useEffect, useMemo, useId } from "react";
 import {

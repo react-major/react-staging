@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 let buffer: Array<any> = [];
 let galite: null | Function = null;
 let galitePromise: null | Promise<any> = null;

@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import tailwindConfig from "../../../../tailwind.config";
 
 export const CustomTheme = {

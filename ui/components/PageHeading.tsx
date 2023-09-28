@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import Breadcrumbs from "ui/components/Breadcrumbs";
 import Tag from "ui/components/Tag";
 import { H1 } from "./MDX/Heading";

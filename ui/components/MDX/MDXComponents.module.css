@@ -1,6 +1,7 @@
 /*
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
+
 /* Stop purging. */
 .markdown p {
   @apply mb-4 leading-7 whitespace-pre-wrap text-gray-70;

@@ -2,6 +2,8 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
+"use client";
+
 import Head from "next/head";
 import Link from "next/link";
 import Router from "next/router";

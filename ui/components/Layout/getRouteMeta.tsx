@@ -1,6 +1,8 @@
 /*
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
+
+"use client";
 /**
  * While Next.js provides file-based routing, we still need to construct
  * a sidebar for navigation and provide each markdown page
