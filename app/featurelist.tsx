@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { Feature } from "./page";
+import { Prisma } from "@prisma/client";
+import { FeaturesWithAuthors } from "./page";
 
 type Props = {
-  features: Feature[];
+  features: FeaturesWithAuthors;
 };
 
 export default function FeatureList(props: Props) {
@@ -10,7 +11,10 @@ export default function FeatureList(props: Props) {
     <ul>
       {props.features.map((feature) => (
         <li key={feature.id}>
-          <Link href={`/features/${feature.id}`}>{feature.authorName}</Link>
+          <Link href={`/features/${feature.id}`}>
+            {feature.title}
+            {feature.author != null ? ` by ${feature.author.name}` : ""}
+          </Link>
         </li>
       ))}
     </ul>

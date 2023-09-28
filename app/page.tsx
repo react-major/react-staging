@@ -2,12 +2,9 @@ import Image from "next/image";
 import prisma from "../lib/prisma";
 import FeatureList from "./featurelist";
 
-export type Feature = {
-  authorName: string;
-  id: string;
-};
+import { Prisma } from "@prisma/client";
 
-export default async function Home() {
+async function getFeaturesWithAuthors() {
   const features = await prisma.feature.findMany({
     include: {
       author: {
@@ -15,19 +12,14 @@ export default async function Home() {
       },
     },
   });
+  return features;
+}
 
-  const featureList: Feature[] = [];
-  for (const feature of features) {
-    featureList.push({
-      authorName: feature.author?.name ?? "",
-      id: feature.id,
-    });
-  }
+export type FeaturesWithAuthors = Prisma.PromiseReturnType<
+  typeof getFeaturesWithAuthors
+>;
 
-  const authorNamesAndIds = features.map((feature: any) => ({
-    authorName: feature.author?.name ?? "",
-    id: feature.id,
-  }));
-
-  return <FeatureList features={authorNamesAndIds} />;
+export default async function Home() {
+  const features = await getFeaturesWithAuthors();
+  return <FeatureList features={features} />;
 }
