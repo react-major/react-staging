@@ -15,6 +15,7 @@
     "@prisma/client": "^5.3.1",
     "body-scroll-lock": "^3.1.3",
     "classnames": "^2.2.6",
+    "debounce": "^1.2.1",
     "next": "latest",
     "react": "latest",
     "react-collapsed": "npm:@gaearon/react-collapsed@3.1.0-forked.1",
