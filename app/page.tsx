@@ -23,7 +23,7 @@ export default async function Home() {
 
   return (
     <main className="self-stretch w-full">
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid md:grid-cols-3 gap-4">
         <FeatureList
           versionName="18.2.0"
           releaseChannel="Stable"
