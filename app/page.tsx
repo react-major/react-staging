@@ -1,5 +1,4 @@
-import Image from "next/image";
-import prisma from "lib/prisma";
+import prisma from "../lib/prisma";
 import FeatureList from "./featurelist";
 
 import { Prisma } from "@prisma/client";
