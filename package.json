@@ -22,15 +22,16 @@
     "parse-numeric-range": "^1.2.0",
     "react": "latest",
     "react-collapsed": "npm:@gaearon/react-collapsed@3.1.0-forked.1",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "zod": "^3.22.2"
   },
   "devDependencies": {
     "@mdx-js/mdx": "^2.1.3",
     "@types/body-scroll-lock": "^2.6.1",
     "@types/classnames": "^2.2.10",
     "@types/debounce": "^1.2.1",
-    "@types/node": "latest",
     "@types/mdx-js__react": "^1.5.2",
+    "@types/node": "latest",
     "@types/parse-numeric-range": "^0.0.1",
     "@types/react": "latest",
     "@types/react-dom": "latest",
