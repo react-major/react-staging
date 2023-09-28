@@ -1,17 +1,16 @@
 import Link from "next/link";
 import { FeaturesWithAuthors } from "./page";
-import BlogCard from "@/ui/components/MDX/BlogCard";
 import FeatureListCard from "@/ui/components/MDX/FeatureListCard";
 
-type Props = {
+export default function FeatureList({
+  features,
+}: {
   features: FeaturesWithAuthors;
-};
-
-export default function FeatureList(props: Props) {
+}) {
   return (
-    <FeatureListCard>
+    <FeatureListCard title="Upcoming features">
       <ul>
-        {props.features.map((feature) => (
+        {features.map((feature) => (
           <li key={feature.id}>
             <Link href={`/features/${feature.id}`}>
               {feature.title}
