@@ -20,5 +20,14 @@ export type FeaturesWithAuthors = Prisma.PromiseReturnType<
 
 export default async function Home() {
   const features = await getFeaturesWithAuthors();
-  return <FeatureList features={features} />;
+
+  return (
+    <main className="self-stretch w-full">
+      <div className="grid grid-cols-3 gap-4">
+        <FeatureList features={features} />
+        <FeatureList features={features} />
+        <FeatureList features={features} />
+      </div>
+    </main>
+  );
 }

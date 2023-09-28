@@ -6,10 +6,6 @@ import "ui/styles/algolia.css";
 import "ui/styles/index.css";
 import "ui/styles/sandpack.css";
 
-function MaxWidth({ children }: { children: any }) {
-  return <div className="max-w-4xl ms-0 2xl:mx-auto">{children}</div>;
-}
-
 const inter = Inter({ subsets: ["latin"] });
 
 const metadata: Metadata = {
@@ -84,7 +80,7 @@ export default function RootLayout({
           // @ts-ignore
           meta={metadata}
         >
-          <MaxWidth>{children}</MaxWidth>
+          {children}
         </Page>
       </body>
     </html>
