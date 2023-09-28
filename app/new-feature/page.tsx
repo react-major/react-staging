@@ -6,6 +6,7 @@ import { createFeature } from "./actions";
 // @ts-expect-error experimental_useFormState is missing from types
 import { experimental_useFormState as useFormState } from "react-dom";
 import { H2 } from "ui/components/MDX/Heading";
+import ButtonLink from "ui/components/ButtonLink";
 import { SubmitButton } from "./submit-button";
 
 function MaxWidth({ children }: PropsWithChildren) {
@@ -47,7 +48,12 @@ export default function Page() {
           name="content"
           required
         />
-        <SubmitButton size="lg" />
+        <div className="space-x-2">
+          <SubmitButton size="lg" />
+          <ButtonLink type="secondary" size="lg" href="/">
+            Cancel
+          </ButtonLink>
+        </div>
         <p aria-live="polite" className="sr-only">
           {state?.message}
         </p>
