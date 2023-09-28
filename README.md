@@ -2,6 +2,16 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+### Environment Setup
+
+Install the vercel CLI with `npm i -g vercel@latest`, then pull environment variables with:
+
+```
+vercel env pull .env
+```
+
+### Run the Server
+
 First, run the development server:
 
 ```bash
